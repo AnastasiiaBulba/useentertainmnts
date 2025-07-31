@@ -1,0 +1,46 @@
+{
+  "instructions": [
+    {
+      "id": 1,
+      "number": "1",
+      "title": "Choose Your Character",
+      "description": "Select from beloved anime characters like Nezuko Kamado, Usagi Tsukino, Zero Two, and Nami to style for the Met Gala.",
+      "tip": "Each character has their own unique personality and style preferences!"
+    },
+    {
+      "id": 2,
+      "number": "2",
+      "title": "Select Your Outfit",
+      "description": "Browse through elegant kimonos, stunning evening gowns, and fashionable dresses to find the perfect look for your character.",
+      "tip": "Mix traditional Japanese fashion with modern Met Gala glamour!"
+    },
+    {
+      "id": 3,
+      "number": "3",
+      "title": "Apply Makeup",
+      "description": "Create the perfect look with professional makeup tools - from natural beauty to dramatic Met Gala glamour.",
+      "tip": "Experiment with different makeup styles to match your outfit!"
+    },
+    {
+      "id": 4,
+      "number": "4",
+      "title": "Add Accessories",
+      "description": "Complete your look with exquisite jewelry, hair accessories, and fashion-forward pieces for the perfect finishing touch.",
+      "tip": "Accessories can transform a simple outfit into a stunning ensemble!"
+    },
+    {
+      "id": 5,
+      "number": "5",
+      "title": "Showcase Your Style",
+      "description": "Present your styled character on the red carpet and see your fashion creation come to life in a glamorous photo moment.",
+      "tip": "Every transformation ends with a fashion-forward red carpet moment!"
+    },
+    {
+      "id": 6,
+      "number": "6",
+      "title": "Create More Looks",
+      "description": "Try different combinations and styles to create endless fashion possibilities. There's no competition - just pure creative fun!",
+      "tip": "Express your unique style with endless combinations!"
+    }
+  ]
+}

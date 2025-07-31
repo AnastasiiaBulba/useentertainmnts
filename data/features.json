@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "icon": "🌸",
+      "title": "Elegant Kimono Designs",
+      "description": "Transform your favorite anime characters with stunning traditional Japanese kimono designs and modern fashion elements."
+    },
+    {
+      "id": 2,
+      "icon": "💄",
+      "title": "Glamorous Makeup",
+      "description": "Create stunning looks with professional makeup tools, from natural beauty to dramatic Met Gala glamour."
+    },
+    {
+      "id": 3,
+      "icon": "💎",
+      "title": "Luxury Accessories",
+      "description": "Adorn your characters with exquisite jewelry, hair accessories, and fashion-forward pieces for the perfect look."
+    },
+    {
+      "id": 4,
+      "icon": "👗",
+      "title": "Evening Gowns",
+      "description": "Dress your anime queens in breathtaking evening gowns inspired by the most prestigious fashion events."
+    },
+    {
+      "id": 5,
+      "icon": "✨",
+      "title": "Creative Freedom",
+      "description": "Express your unique style with endless combinations of outfits, makeup, and accessories."
+    },
+    {
+      "id": 6,
+      "icon": "🎭",
+      "title": "Met Gala Magic",
+      "description": "Experience the magic of the Met Gala through the eyes of anime's most beloved characters."
+    }
+  ]
+}

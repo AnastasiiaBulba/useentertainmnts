@@ -1,0 +1,233 @@
+/* Field Section Styles */
+.field-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--surface-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.field-section h2 {
+  text-align: center;
+}
+
+.field-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 105, 180, 0.1) 0%,
+    rgba(147, 112, 219, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.field-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.field-text h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.field-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.field-features {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--spacing-lg);
+}
+
+.field-features li {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-features li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.field-image {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+.field-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(255, 105, 180, 0.3);
+}
+
+.field-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition-normal);
+}
+
+.field-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Fashion Showcase Section Styles */
+.fashion-showcase-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--gradient-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.fashion-showcase-section h2 {
+  text-align: center;
+}
+
+.fashion-showcase-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 20, 147, 0.1) 0%,
+    rgba(255, 105, 180, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.showcase-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.showcase-text h3 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: var(--spacing-md);
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.showcase-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.showcase-features {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--spacing-lg);
+}
+
+.showcase-features li {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.showcase-features li::before {
+  content: "🌸";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.showcase-image {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+.showcase-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(255, 20, 147, 0.3);
+}
+
+.showcase-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition-normal);
+}
+
+.showcase-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .field-content,
+  .showcase-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .field-text h3,
+  .showcase-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .field-text p,
+  .showcase-text p {
+    font-size: 1rem;
+  }
+
+  .field-features li,
+  .showcase-features li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .field-section,
+  .fashion-showcase-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .field-text h3,
+  .showcase-text h3 {
+    font-size: 1.6rem;
+  }
+}
