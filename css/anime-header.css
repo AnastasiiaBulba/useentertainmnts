@@ -40,7 +40,6 @@
 
 .logo:hover {
   color: var(--accent-color);
-  transform: scale(1.05);
 }
 
 .logo-icon {
@@ -53,11 +52,10 @@
   justify-content: center;
   font-size: 1.4rem;
   box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
-  transition: var(--transition-normal);
+  transition: var(--transition-fast);
 }
 
 .logo:hover .logo-icon {
-  transform: rotate(10deg) scale(1.1);
   box-shadow: 0 4px 12px rgba(255, 105, 180, 0.5);
 }
 
@@ -81,46 +79,11 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-sm);
   transition: var(--transition-fast);
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--gradient-primary);
-  transition: var(--transition-normal);
-  z-index: -1;
-  opacity: 0.1;
 }
 
 .nav-link:hover {
   color: var(--primary-color);
-  transform: translateY(-2px);
-}
-
-.nav-link:hover::before {
-  left: 0;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: var(--gradient-primary);
-  transition: var(--transition-fast);
-  transform: translateX(-50%);
-}
-
-.nav-link:hover::after {
-  width: 100%;
+  background: rgba(255, 105, 180, 0.1);
 }
 
 /* Mobile menu button */
@@ -149,7 +112,7 @@
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
   background: var(--accent-color);
 }
 
@@ -158,7 +121,7 @@
 }
 
 .mobile-menu-btn.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
   background: var(--accent-color);
 }
 
@@ -208,14 +171,9 @@
   width: 100%;
   position: relative;
   box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
-  transform: scale(0.8);
-  transition: var(--transition-slow);
+  transition: var(--transition-fast);
   z-index: 2;
   border: 1px solid rgba(255, 105, 180, 0.2);
-}
-
-.mobile-menu.active .mobile-menu-content {
-  transform: scale(1);
 }
 
 .mobile-menu-list {
@@ -243,7 +201,6 @@
   color: var(--primary-color);
   background: rgba(255, 105, 180, 0.1);
   border-color: var(--primary-color);
-  transform: translateX(5px);
 }
 
 /* Mobile close button */
@@ -270,7 +227,6 @@
   background: rgba(255, 20, 147, 0.2);
   border-color: var(--accent-color);
   color: var(--accent-color);
-  transform: scale(1.1);
 }
 
 /* Responsive design */

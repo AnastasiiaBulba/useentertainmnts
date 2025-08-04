@@ -126,26 +126,9 @@ function initHeader() {
     }, 250)
   );
 
-  // Add hover effects to nav links
+  // Simple hover effects for nav links (removed complex animations)
   const navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach((link) => {
-    link.addEventListener("mouseenter", function () {
-      this.style.transform = "translateY(-2px)";
-    });
-
-    link.addEventListener("mouseleave", function () {
-      this.style.transform = "translateY(0)";
-    });
-  });
-
-  // Add click effect to mobile menu button
-  mobileMenuBtn.addEventListener("mousedown", function () {
-    this.style.transform = "scale(0.95)";
-  });
-
-  mobileMenuBtn.addEventListener("mouseup", function () {
-    this.style.transform = "scale(1)";
-  });
+  // Hover effects are now handled by CSS only
 
   // Keyboard navigation
   document.addEventListener("keydown", function (e) {
